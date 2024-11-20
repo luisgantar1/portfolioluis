@@ -235,6 +235,77 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+@media (max-width: 992px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 16px; 
+    padding: 0 10px; 
+  }
+
+  nav.navbar a.navbar-brand {
+    width: 15%; 
+  }
+
+  nav.navbar .navbar-toggler {
+    display: block; 
+  }
+
+  nav.navbar .navbar-nav {
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  nav.navbar .navbar-toggler-icon {
+    top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 14px; 
+    padding: 0 15px;
+  }
+
+  nav.navbar .navbar-nav {
+    margin-top: 10px;
+  }
+
+  nav.navbar .navbar-text button {
+    padding: 12px 24px; 
+    font-size: 16px;
+  }
+
+  .social-icon a {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 12px; 
+    padding: 0 10px; 
+  }
+
+  nav.navbar .navbar-brand {
+    width: 25%;
+  }
+
+  nav.navbar .navbar-nav {
+    margin-top: 5px;
+  }
+
+  nav.navbar .navbar-text button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .social-icon a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -305,16 +376,111 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+@media (max-width: 1200px) {
+  .banner {
+    padding: 200px 0 80px 0;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .banner button {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding: 150px 0 60px 0;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 14px;
+    width: 85%;
+  }
+
+  .banner button {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .banner img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 120px 0 50px 0;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  .banner p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .banner button {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .banner img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    padding: 100px 0 40px 0;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .banner button {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+}
+
 /************ Skills Css ************/
+/* Umum */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
-.row{
+
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
@@ -322,17 +488,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
+
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -340,12 +509,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
-.col-md-6{
+
+/* Responsif untuk Kolom */
+.col-md-6 {
   flex: 1 1 50%;
   max-width: 50%;
   box-sizing: border-box;
   padding: 10px;
 }
+
+/* Daftar Keterampilan */
 .skill-list {
   list-style-type: disc; 
   padding-left: 200px;
@@ -353,7 +526,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-list li {
   font-size: 2.5em;
-  color: #fff; 
+  color: #fff;
   padding-left: 20px; 
   line-height: 1.5em; 
   text-align: left;
@@ -365,6 +538,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff; 
 }
 
+
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .skill h2 {
+    font-size: 36px;
+  }
+
+  .skill-list {
+    padding-left: 40px;
+  }
+
+  .skill-list li {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-bx {
+    padding: 40px 30px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    margin: 14px 0 40px 0;
+  }
+
+  .skill-list {
+    padding-left: 20px;
+  }
+
+  .skill-list li {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill h2 {
+    font-size: 30px;
+  }
+
+  .skill-list li {
+    font-size: 1.5em;
+  }
+
+  .skill p {
+    font-size: 14px;
+    margin: 14px 0 30px 0;
+  }
+}
 
 /************ Projects Css ************/
 .project {
@@ -515,6 +741,113 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+@media (max-width: 1200px) {
+  .project h2 {
+    font-size: 40px;
+  }
+
+  .project p {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .project .nav.nav-pills {
+    width: 80%;
+  }
+
+  .project .nav.nav-pills .nav-link {
+    font-size: 16px;
+  }
+
+  .proj-imgbx img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .project h2 {
+    font-size: 35px;
+  }
+
+  .project p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .project .nav.nav-pills {
+    width: 90%;
+  }
+
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+  }
+
+  .proj-imgbx img {
+    height: 150px;
+  }
+
+  .background-image-right {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project h2 {
+    font-size: 30px;
+  }
+
+  .project p {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .project .nav.nav-pills {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project .nav.nav-pills .nav-item {
+    width: 100%;
+  }
+
+  .proj-imgbx img {
+    height: 130px;
+  }
+
+  .background-image-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .project h2 {
+    font-size: 25px;
+  }
+
+  .project p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .project .nav.nav-pills {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project .nav.nav-pills .nav-link {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .proj-imgbx img {
+    height: 100px;
+  }
+
+  .background-image-right {
+    width: 60%;
+  }
+}
+
 /************ Contact ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -587,21 +920,128 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-/************ Footer Css ************/
-.footer {
-  padding: 100px 50px 50px 100px;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (max-width: 1200px) {
+  .contact {
+    padding: 50px 0 150px 0;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .contact form button {
+    font-size: 16px;
+    padding: 12px 40px;
+  }
 }
-.footer img {
-  width: 26%;
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 40px 0 120px 0;
+  }
+  .contact h2 {
+    font-size: 35px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+  .contact form button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
 }
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 0 100px 0;
+  }
+  .contact h2 {
+    font-size: 30px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+  .contact form button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .contact img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 20px 0 80px 0;
+  }
+  .contact h2 {
+    font-size: 28px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .contact form button {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  .contact img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 80px 40px 40px 80px;
+  }
+  .footer img {
+    width: 30%;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 70px 30px 30px 70px;
+  }
+  .footer img {
+    width: 35%;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 20px 60px;
+  }
+  .footer img {
+    width: 40%;
+  }
+  .footer p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 50px 15px 15px 50px;
+  }
+  .footer img {
+    width: 50%;
+  }
+  .footer p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
