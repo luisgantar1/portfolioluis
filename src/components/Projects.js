@@ -18,7 +18,6 @@ export const Projects = () => {
       title: "Jaoa",
       description: "My First Group React Project",
       imgUrl: projImg1,
-      link: "https://jaoa.netlify.app/",
     },
     {
       title: "ForknKnife",
