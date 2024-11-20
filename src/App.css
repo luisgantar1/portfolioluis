@@ -1003,6 +1003,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+/************ Footer Css ************/
+.footer {
+  padding: 100px 50px 50px 100px;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img {
+  width: 26%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 80px 40px 40px 80px;
+  }
+  .footer img {
+    width: 30%;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 1200px) {
   .footer {
     padding: 80px 40px 40px 80px;
