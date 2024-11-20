@@ -792,20 +792,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 12px;
   }
 
-  .project .nav.nav-pills {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .project .nav.nav-pills .nav-link {
-    font-size: 12px;
-    padding: 10px 0;
-  }
-
-  .proj-imgbx img {
-    height: 100px;
-  }
-
   .background-image-right {
     width: 60%;
   }
