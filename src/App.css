@@ -261,48 +261,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (max-width: 768px) {
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-size: 14px; 
-    padding: 0 15px;
-  }
-
-  nav.navbar .navbar-nav {
-    margin-top: 10px;
-  }
-
-  nav.navbar .navbar-text button {
-    padding: 12px 24px; 
-    font-size: 16px;
-  }
-
-  .social-icon a {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-@media (max-width: 576px) {
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-size: 12px; 
-    padding: 0 10px; 
+  nav.navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
   }
 
   nav.navbar .navbar-brand {
-    width: 25%;
+    margin-bottom: 10px; 
+    width: auto;
+    font-size: 18px;
+  }
+
+  nav.navbar .navbar-toggler {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   nav.navbar .navbar-nav {
-    margin-top: 5px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 8px 0;
+    font-size: 14px; 
+  }
+
+  nav.navbar .navbar-text {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
   }
 
   nav.navbar .navbar-text button {
-    padding: 10px 20px;
+    width: 80%;
+    padding: 10px 20px; 
     font-size: 14px;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .social-icon a {
     width: 30px;
     height: 30px;
+    margin: 0 5px;
   }
 }
 
