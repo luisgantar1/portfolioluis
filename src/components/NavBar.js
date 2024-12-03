@@ -13,6 +13,7 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [sidebarActive, setSidebarActive] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -32,25 +33,30 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const toggleSidebar = () => {
+    setSidebarActive(!sidebarActive);
+  };
+
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <div class="content-overlay">
+        <Navbar expand="md" className={`${scrolled ? "scrolled" : ""} ${sidebarActive ? "active" : ""}`}>
         <Container>
           <Navbar.Brand href="/">
             <h1>LUIS</h1>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleSidebar}>
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
             <Link to="home" smooth={true} duration={500}>
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() =>  onUpdateActiveLink('home')}>Home</Nav.Link>
             </Link>
-            <Link to="skills-bx" smooth={true} duration={500}>
+            <Link to="skills-bx" smooth={true} duration={500} >
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             </Link>
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="projects" smooth={true} duration={500} >
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Link>
             </Nav>
@@ -69,6 +75,7 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </div>
     </Router>
   )
 }
